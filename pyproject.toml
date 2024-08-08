@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+
+[project]
+name = "nnapprox"
+readme = "README.md"
+dynamic = ["version", "dependencies"]
+requires-python = '>=3.8.1'
+
+[tool.setuptools]
+packages = ["nnapprox"]
+
+[tool.setuptools_scm]
+write_to = "nnapprox/_version.py"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

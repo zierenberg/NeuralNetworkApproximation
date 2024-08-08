@@ -44,7 +44,7 @@ class DenseNN(nn.Module):
         return self.output(x)
 
 
-class nnfunction:
+class nnapprox:
     """
     This class implements a pipeline to preprocess input, to feed it to a neural network (general function approximator), and to postprocess the output.
     Example
